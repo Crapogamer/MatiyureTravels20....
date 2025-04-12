@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matiyure Travels 20</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      color: #fff;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('https://upload.wikimedia.org/wikipedia/commons/8/89/Salto_Angel_-_Angel_Falls.jpg'),
+                  url('https://upload.wikimedia.org/wikipedia/commons/6/6d/Los_Roques_National_Park.jpg'),
+                  url('https://upload.wikimedia.org/wikipedia/commons/b/b5/Sierra_Nevada_de_M%C3%A9rida_con_nieve.jpg'),
+                  url('https://upload.wikimedia.org/wikipedia/commons/f/fd/Medanos_de_Coro_2.jpg');
+      background-size: 50% 50%;
+      background-position: top left, top right, bottom left, bottom right;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #ffce00;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    nav {
+      background-color: rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      backdrop-filter: blur(6px);
+    }
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #ffce00;
+      font-weight: 500;
+      font-size: 1.1em;
+      transition: 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+      transform: scale(1.1);
+    }
+    section {
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 20px auto;
+      max-width: 1000px;
+      border-radius: 15px;
+    }
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin: 10px 0;
+    }
+    .methods {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .method {
+      background-color: #ffce00;
+      color: #000;
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .method:hover {
+      transform: scale(1.05);
+      background-color: #ffd700;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, select, textarea, button {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1em;
+    }
+    button {
+      background-color: #ffce00;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .social-icons a {
+      color: #ffce00;
+      font-size: 1.3em;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      color: white;
+      transform: scale(1.2);
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Matiyure Travels 20</h1>
+    <p>Boletos Aéreos Nacionales e Internacionales</p>
+  </header>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#pagos">Métodos de Pago</a>
+    <a href="#reserva">Reserva</a>
+    <a href="#galeria">Venezuela</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h2>¡Viaja con nosotros al mejor precio!</h2>
+    <p>Compra tus boletos aéreos nacionales e internacionales de forma segura y rápida desde Venezuela.</p>
+  </section>
+
+  <section id="servicios">
+    <h3>Servicios</h3>
+    <ul>
+      <li>Venta de boletos aéreos nacionales</li>
+      <li>Venta de boletos aéreos internacionales</li>
+      <li>Asesoría personalizada para tu viaje</li>
+      <li>Promociones especiales y ofertas</li>
+    </ul>
+  </section>
+
+  <section id="pagos">
+    <h3>Métodos de Pago</h3>
+    <div class="methods">
+      <div class="method">Pago Móvil</div>
+      <div class="method">Transferencia Bancaria</div>
+      <div class="method">Zelle</div>
+      <div class="method">PayPal</div>
+      <div class="method">Efectivo (en oficina)</div>
+    </div>
+  </section>
+
+  <section id="reserva">
+    <h3>Formulario de Reserva</h3>
+    <form action="mailto:Matiyuretravels2023@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <input type="tel" name="telefono" placeholder="Teléfono de contacto" required>
+      <select name="destino" required>
+        <option value="">Destino</option>
+        <option value="nacional">Nacional</option>
+        <option value="internacional">Internacional</option>
+      </select>
+      <textarea name="detalles" placeholder="Detalles del viaje (fechas, número de pasajeros, etc.)" required></textarea>
+      <button type="submit">Enviar Reserva</button>
+    </form>
+  </section>
+
+  <section id="galeria">
+    <h3 style="text-align: center;">Paisajes de Venezuela</h3>
+    <p style="text-align:center;">Disfruta de los paisajes más icónicos de nuestro país.</p>
+  </section>
+
+  <section class="social-media">
+    <h3>Síguenos en redes sociales</h3>
+    <div class="social-icons">
+      <a href="#" target="_blank">📘 Facebook</a>
+      <a href="#" target="_blank">📸 Instagram</a>
+      <a href="https://wa.me/58241504297" target="_blank">📱 WhatsApp</a>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>&copy; 2025 Matiyure Travels 20 - Todos los derechos reservados</p>
+    <p>Contacto: Matiyuretravels2023@gmail.com</p>
+    <p>WhatsApp: 0241-504297</p>
+  </footer>
+</body>
+</html>
